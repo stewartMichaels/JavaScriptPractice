@@ -1,13 +1,9 @@
-let currentResult = 0;
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-function add(num1, num2) {
-    const result = num1 + num2;
-    return result;
+function add() {
+    currentResult = currentResult + userInput.value;
+    outputResult(currentResult, "");
 }
 
-
-currentResult = currentResult + 7;
-
-let calculationDescription = '0 + 7';
-
-outputResult(currentResult, calculationDescription);
+addBtn.addEventListener("click", add);
