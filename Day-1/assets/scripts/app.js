@@ -5,11 +5,40 @@ function getUserNumberInput() {
     return parseInt(userInput.value);
 }
 
+function createAndWriteOutput(operator, resultBeforeCalculation, calcNumber) {
+    const calcDescription = `${resultBeforeCalculation} ${operator} ${calcNumber}`;
+    outputResult(currentResult, calcDescription);   
+}
+
 function add() {
-    const enteredNumber = getUserNumberInput;
-    const calcDescription = `${currentResult} + ${userInput.value}`;
+    const enteredNumber = getUserNumberInput();
+    const initialResult = currentResult;
     currentResult = currentResult + enteredNumber;
-    outputResult(currentResult, calcDescription);
+    createAndWriteOutput("+", initialResult, enteredNumber);
+}
+
+function subtract() {
+   const enteredNumber = getUserNumberInput();
+    const initialResult = currentResult;
+    currentResult = currentResult - enteredNumber;
+    createAndWriteOutput("-", initialResult, enteredNumber);    
+}
+
+function multiply() {
+    const enteredNumber = getUserNumberInput();
+    const initialResult = currentResult;
+    currentResult = currentResult * enteredNumber;
+    createAndWriteOutput("*", initialResult, enteredNumber);
+}
+
+function divide() {
+    const enteredNumber = getUserNumberInput();
+    const initialResult = currentResult;
+    currentResult = currentResult / enteredNumber;
+    createAndWriteOutput("/", initialResult, enteredNumber);
 }
 
 addBtn.addEventListener("click", add);
+subtractBtn.addEventListener("click", add);
+multiplyBtn.addEventListener("click", add);
+divideBtn.addEventListener("click", add);
