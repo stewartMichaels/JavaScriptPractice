@@ -1,4 +1,4 @@
-# Day-to-Day Progress of what I'm studying in JavaScript.
+# JavaScript ~ Practice Days
 
 ## Module 1
 > i learned about the basics of javascript
