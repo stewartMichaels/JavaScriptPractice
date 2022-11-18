@@ -1,6 +1,6 @@
 # JavaScript ~ Practice Days
 
-![meme](https://images.app.goo.gl/sK8nTUhnmiBBj38k7)
+![meme](https://miro.medium.com/max/720/0*F-rMIkdywVWyB5a6.webp)
 
 ## Module 1
 > i learned about the basics of javascript
